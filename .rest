@@ -1,0 +1,9 @@
+### Get products
+
+GET http://localhost:5000/api/products
+Content-Type: application/json
+
+### Get product by id
+
+GET http://localhost:5000/api/products/5ff4879ca5198158549fc09c
+Content-Type: application/json
