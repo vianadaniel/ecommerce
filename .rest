@@ -7,3 +7,31 @@ Content-Type: application/json
 
 GET http://localhost:5000/api/products/5ff4879ca5198158549fc09c
 Content-Type: application/json
+
+### Login
+
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{	
+	"email": "jo@example.com",	
+	"password": "123456"
+}
+
+### Get user profile
+
+get http://localhost:5000/api/users/profile
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZmQ5YWMzYTFmYmI1NDkwYjYwOTEwMCIsImlhdCI6MTYxMDUzNzA0OSwiZXhwIjoxNjEzMTI5MDQ5fQ.ulTreqttDK2X19JYq05XIqN8_mpO0EmBnQL9P0Y9Zl0
+
+### Create user
+
+POST http://localhost:5000/api/users/
+Content-Type: application/json
+
+{
+	"name": "Deborah",
+	"email": "deb@lbn.com",
+	"isAdmin": "false",
+	"password": "123456"
+}
